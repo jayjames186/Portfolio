@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Helps with rendering on Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Sets the viewport to ensure your site is mobile-responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage, shown in the browser tab -->
+    <title>Jaylene's Portfolio Website</title>
+
+    <!-- Link to box icons library for using icons throughout the site -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link to the external CSS file for styling the webpage -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header section of the website, typically includes navigation and branding -->
+    <header class="header">
+        <!-- Website logo; clicking on it typically takes you back to the home page -->
+        <a href="#" class="logo">Portfolio.</a>
+
+        <!-- Mobile menu icon that shows the menu on smaller screens -->
+        <div class='bx bx-menu' id="menu-icon"></div>
+
+        <!-- Navigation bar with links to different sections of the website -->
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a> <!-- Link to the home section -->
+            <a href="#portfolio">Portfolio</a> <!-- Link to the portfolio section -->
+            <!-- Example of a commented-out link for services which is not currently used -->
+            <!--<a href="#services">Services</a>-->
+            <a href="#gallery">Photo Gallery</a> <!-- New link for the Gallery section -->
+            <!-- <a href="#about">About</a> --> <!-- Link to the about section -->
+            <a href="#contact">Contact</a> <!-- Link to the contact section -->
+            
+        </nav>
+    </header>
+
+    <!-- Home section with a brief introduction and a background image -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3> <!-- Greeting text -->
+            <h1>Jaylene James</h1> <!-- Name of the portfolio owner -->
+            <h3>And I'm a <span class="multiple-text"></span></h3> <!-- Placeholder for dynamically changing text, typically describing professional roles -->
+            <p>Hi, welcome to my personal portfolio website I created. Learn about me, and about a couple of projects I worked on at Milwaukee Area Technical College. </p> <!-- Brief introduction and welcome message -->
+            <div class="social-media">
+                <!-- Social media links. Some are commented out as examples, with only LinkedIn actively linked -->
+                <!--<a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a> -->
+                <a href="https://www.linkedin.com/in/jaylene-james-a6b87a2b7/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="Files/JayleneResume.pdf" class="btn" target="_blank">Open Resume</a> 
+ <!-- Button to download the resume -->
+        </div>
+
+        <!-- Section with an image, typically of the site owner or a relevant visual -->
+        <div class="home-img">
+            <img src="images/home.png" alt=""> <!-- The main image on the home page -->
+        </div>
+    </section>
+
+
+    
+
+    <!-- services section design -->
+    <!-- <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dignissimos vitae magni aut commodi
+                    non laborum nisi alias iusto voluptatibus.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dignissimos vitae magni aut commodi
+                    non laborum nisi alias iusto voluptatibus.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dignissimos vitae magni aut commodi
+                    non laborum nisi alias iusto voluptatibus.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Portfolio Section: This section showcases the latest projects or work. -->
+<section class="portfolio" id="portfolio">
+    <!-- Section Heading: Displays the title of the section. -->
+    <h2 class="heading">Latest <span>Projects</span></h2>
+
+    <!-- Portfolio Container: Wraps the portfolio items for styling and alignment. -->
+    <div class="portfolio-container">
+        <!-- Portfolio Box: Individual container for each project showcasing an image, title, and brief description. -->
+        <div class="portfolio-box">
+            <!-- Project Image: Displays a visual representation of the project. -->
+            <img src="images/Adrenaline rush Race Game Images/ARaceLogo.png" alt="">
+            <!-- Portfolio Layer: Contains the text information and link for the project. -->
+            <div class="portfolio-layer">
+                <!-- Project Title -->
+                <h4>Adrenaline Rush</h4>
+                <!-- Project Description -->
+                <p>This is a solo race game I built.</p>
+                <!-- External Link Icon: Modified to open the link in a new tab. -->
+                <a href="#adrenaline-rush"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <!-- Additional portfolio boxes follow the same structure as the first. -->
+        <!-- Each box showcases a different project with its own image, title, description, and link. -->
+        <div class="portfolio-box">
+            <img src="images\Ready, Set, Quack Images\Ready, Set, Quack Logo.png" alt="">
+            <div class="portfolio-layer">
+                <h4>Ready Quack Set (Race Game)</h4>
+                <p>A racing Kart game simalar to Mario Kart.</p>
+                <!-- Updated Link -->
+                <a href="#Ready Quack Set (Race Game)"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+         <!-- Repeating structure for other projects -->
+         <div class="portfolio-box">
+            <img src="images\Other Projects\OPLogo.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Other Projects</h4>
+                <p>A mix of other projects i've worked on.</p>
+                <a href="#other-projects"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <!-- Additional portfolio-box elements are omitted for brevity. -->
+    </div>
+</section>
+
+        <!-- Gallery Section -->
+<section class="gallery" id="gallery">
+    <h2 class="heading">Photo <span>Gallery</span></h2>
+
+    <!-- Subsection 1 -->
+    <div class="gallery-subsection" id="adrenaline-rush">
+        <h3 class="sub-heading">Adrenaline Rush</h3>
+        <div class="portfolio-container">
+            <!-- Gallery Item 1.1 -->
+            <div class="portfolio-box">
+                <img src="images/Adrenaline rush Race Game Images/ARace1.png" alt="Photo 1.1">
+                <div class="portfolio-layer">
+                  <!--  <h4>Photo Title 1.1</h4>
+                    <p>Description of photo 1.1.</p>  -->
+                </div>
+            </div>
+            <!-- Gallery Item 1.2 -->
+            <div class="portfolio-box">
+                <img src="images/Adrenaline rush Race Game Images/ARace2.png" alt="Photo 1.2">
+                <div class="portfolio-layer">
+                 <!--   <h4>Photo Title 1.2</h4>
+                    <p>Description of photo 1.2.</p> -->
+                </div>
+            </div>
+            <!-- Gallery Item 1.3 -->
+            <div class="portfolio-box">
+                <img src="images/Adrenaline rush Race Game Images/ARace3.png" alt="Photo 1.2">
+                <div class="portfolio-layer">
+                 <!--   <h4>Photo Title 1.2</h4>
+                    <p>Description of photo 1.2.</p> -->
+                </div>
+            </div>
+            <!-- Gallery Item 1.4 -->
+            <div class="portfolio-box">
+                <img src="images/Adrenaline rush Race Game Images/ARace4.png" alt="Photo 1.2">
+                <div class="portfolio-layer">
+                 <!--   <h4>Photo Title 1.2</h4>
+                    <p>Description of photo 1.2.</p> -->
+                </div>
+            </div>
+            <!-- Gallery Item 1.5 -->
+            <div class="portfolio-box">
+                <img src="images/Adrenaline rush Race Game Images/ARace5.png" alt="Photo 1.2">
+                <div class="portfolio-layer">
+                 <!--   <h4>Photo Title 1.2</h4>
+                    <p>Description of photo 1.2.</p> -->
+                </div>
+            </div>
+            <!-- Gallery Item 1.6 -->
+            <div class="portfolio-box">
+                <img src="images/Adrenaline rush Race Game Images/ARace6.png" alt="Photo 1.2">
+                <div class="portfolio-layer">
+                 <!--   <h4>Photo Title 1.2</h4>
+                    <p>Description of photo 1.2.</p> -->
+                </div>
+            </div>
+            <!-- Gallery Item 1.7 -->
+            <div class="portfolio-box">
+                <img src="images/Adrenaline rush Race Game Images/ARace7.png" alt="Photo 1.2">
+                <div class="portfolio-layer">
+                 <!--   <h4>Photo Title 1.2</h4>
+                    <p>Description of photo 1.2.</p> -->
+                </div>
+            </div>
+            <!-- Gallery Item 1.8 -->
+            <div class="portfolio-box">
+                <img src="images/Adrenaline rush Race Game Images/ARace8.png" alt="Photo 1.2">
+                <div class="portfolio-layer">
+                 <!--   <h4>Photo Title 1.2</h4>
+                    <p>Description of photo 1.2.</p> -->
+                </div>
+            </div>
+            <!-- Gallery Item 1.9 -->
+            <div class="portfolio-box">
+                <img src="images/Adrenaline rush Race Game Images/ARace9.png" alt="Photo 1.2">
+                <div class="portfolio-layer">
+                 <!--   <h4>Photo Title 1.2</h4>
+                    <p>Description of photo 1.2.</p> -->
+                </div>
+            </div>
+            <!-- Gallery Item 1.10 -->
+            <div class="portfolio-box">
+                <img src="images/Adrenaline rush Race Game Images/ARace10.png" alt="Photo 1.2">
+                <div class="portfolio-layer">
+                 <!--   <h4>Photo Title 1.2</h4>
+                    <p>Description of photo 1.2.</p> -->
+                </div>
+            </div>
+            <!-- Gallery Item 1.11 -->
+            <div class="portfolio-box">
+                <img src="images/Adrenaline rush Race Game Images/ARace11.png" alt="Photo 1.2">
+                <div class="portfolio-layer">
+                 <!--   <h4>Photo Title 1.2</h4>
+                    <p>Description of photo 1.2.</p> -->
+                </div>
+            </div>
+            <!-- Gallery Item 1.12 -->
+            <div class="portfolio-box">
+                <img src="images/Adrenaline rush Race Game Images/ARace12.png" alt="Photo 1.2">
+                <div class="portfolio-layer">
+                 <!--   <h4>Photo Title 1.2</h4>
+                    <p>Description of photo 1.2.</p> -->
+                </div>
+            </div>
+            <!-- Gallery Item 1.13 -->
+            <div class="portfolio-box">
+                <img src="images/Adrenaline rush Race Game Images/ARace13.png" alt="Photo 1.2">
+                <div class="portfolio-layer">
+                 <!--   <h4>Photo Title 1.2</h4>
+                    <p>Description of photo 1.2.</p> -->
+                </div>
+            </div>
+            <!-- Gallery Item 1.14 -->
+            <div class="portfolio-box">
+                <img src="images/Adrenaline rush Race Game Images/ARace14.png" alt="Photo 1.2">
+                <div class="portfolio-layer">
+                 <!--   <h4>Photo Title 1.2</h4>
+                    <p>Description of photo 1.2.</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subsection 2 -->
+    <div class="gallery-subsection" id="Ready Quack Set (Race Game)">
+        <h3 class="sub-heading">Ready Quack Set (Race Game)</h3>
+        <div class="portfolio-container">
+            <!-- Gallery Item 2.1 -->
+            <div class="portfolio-box">
+                <img src="images\Ready, Set, Quack Images\RQS1.png" alt="Photo 2.1">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.1</h4>
+                    <p>Description of photo 2.1.</p> -->
+                </div>
+            </div>
+            <!-- Gallery Item 2.2 -->
+            <div class="portfolio-box">
+                <img src="images\Ready, Set, Quack Images\RQS2.png" alt="Photo 2.2">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.2</h4>
+                    <p>Description of photo 2.2.</p> -->
+                </div>
+            </div>
+             <!-- Gallery Item 2.2 -->
+             <div class="portfolio-box">
+                <img src="images\Ready, Set, Quack Images\RQS3.gif" alt="Photo 2.2" autoplay loop muted>
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.2</h4>
+                    <p>Description of photo 2.2.</p> -->
+                </div>
+            </div>
+             <!-- Gallery Item 2.2 -->
+             <div class="portfolio-box">
+                <img src="images\Ready, Set, Quack Images\RQS4.png" alt="Photo 2.2">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.2</h4>
+                    <p>Description of photo 2.2.</p> -->
+                </div>
+            </div>
+             <!-- Gallery Item 2.2 -->
+             <div class="portfolio-box">
+                <img src="images\Ready, Set, Quack Images\RQS5.png" alt="Photo 2.2">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.2</h4>
+                    <p>Description of photo 2.2.</p> -->
+                </div>
+            </div>
+             <!-- Gallery Item 2.2 -->
+             <div class="portfolio-box">
+                <img src="images\Ready, Set, Quack Images\RQS6.png" alt="Photo 2.2">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.2</h4>
+                    <p>Description of photo 2.2.</p> -->
+                </div>
+            </div>
+             <!-- Gallery Item 2.2 -->
+             <div class="portfolio-box">
+                <img src="images\Ready, Set, Quack Images\RQS7.png" alt="Photo 2.2">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.2</h4>
+                    <p>Description of photo 2.2.</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subsection 3 -->
+    <div class="gallery-subsection" id="other-projects">
+        <h3 class="sub-heading">Other Projects</h3>
+        <div class="portfolio-container">
+            <!-- Gallery Item 2.1 -->
+            <div class="portfolio-box">
+                <img src="images\Other Projects\OP1.jpg" alt="Photo 2.1">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.1</h4>
+                    <p>Description of photo 2.1.</p> -->
+                </div>
+            </div>
+                 <!-- Gallery Item 2.1 -->
+            <div class="portfolio-box">
+                <img src="images\Other Projects\OP2.jpg" alt="Photo 2.1">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.1</h4>
+                    <p>Description of photo 2.1.</p> -->
+                </div>
+            </div>
+                 <!-- Gallery Item 2.1 -->
+            <div class="portfolio-box">
+                <img src="images\Other Projects\OP3.jpg" alt="Photo 2.1">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.1</h4>
+                    <p>Description of photo 2.1.</p> -->
+                </div>
+            </div>
+                 <!-- Gallery Item 2.1 -->
+            <div class="portfolio-box">
+                <img src="images\Other Projects\OP4.jpg" alt="Photo 2.1">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.1</h4>
+                    <p>Description of photo 2.1.</p> -->
+                </div>
+            </div>
+                 <!-- Gallery Item 2.1 -->
+            <div class="portfolio-box">
+                <img src="images\Other Projects\OP5.jpg" alt="Photo 2.1">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.1</h4>
+                    <p>Description of photo 2.1.</p> -->
+                </div>
+            </div>
+                 <!-- Gallery Item 2.1 -->
+            <div class="portfolio-box">
+                <img src="images\Other Projects\OP6.jpg" alt="Photo 2.1">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.1</h4>
+                    <p>Description of photo 2.1.</p> -->
+                </div>
+            </div>
+                 <!-- Gallery Item 2.1 -->
+            <div class="portfolio-box">
+                <img src="images\Other Projects\OP7.jpg" alt="Photo 2.1">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.1</h4>
+                    <p>Description of photo 2.1.</p> -->
+                </div>
+            </div>
+                 <!-- Gallery Item 2.1 -->
+            <div class="portfolio-box">
+                <img src="images\Other Projects\OP8.jpg" alt="Photo 2.1">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.1</h4>
+                    <p>Description of photo 2.1.</p> -->
+                </div>
+            </div>
+                 <!-- Gallery Item 2.1 -->
+            <div class="portfolio-box">
+                <img src="images\Other Projects\OP9.jpg" alt="Photo 2.1">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.1</h4>
+                    <p>Description of photo 2.1.</p> -->
+                </div>
+            </div>
+                 <!-- Gallery Item 2.1 -->
+            <div class="portfolio-box">
+                <img src="images\Other Projects\OP10.jpg" alt="Photo 2.1">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.1</h4>
+                    <p>Description of photo 2.1.</p> -->
+                </div>
+            </div>
+                 <!-- Gallery Item 2.1 -->
+            <div class="portfolio-box">
+                <img src="images\Other Projects\OP11.jpg" alt="Photo 2.1">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.1</h4>
+                    <p>Description of photo 2.1.</p> -->
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images\Other Projects\OP12.jpg" alt="Photo 2.1">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.1</h4>
+                    <p>Description of photo 2.1.</p> -->
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images\Other Projects\OP13.jpg" alt="Photo 2.1">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.1</h4>
+                    <p>Description of photo 2.1.</p> -->
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images\Other Projects\OP14.jpg" alt="Photo 2.1">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.1</h4>
+                    <p>Description of photo 2.1.</p> -->
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images\Other Projects\OP15.jpg" alt="Photo 2.1">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.1</h4>
+                    <p>Description of photo 2.1.</p> -->
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images\Other Projects\OP16.jpg" alt="Photo 2.1">
+                <div class="portfolio-layer">
+                    <!-- <h4>Photo Title 2.1</h4>
+                    <p>Description of photo 2.1.</p> -->
+                </div>
+            </div>
+
+    <!-- Add more subsections as needed -->
+</section>
+
+
+<!--
+    About Section: Provides detailed information about the person or organization, including background, skills, and other relevant details. -->
+<!-- <section class="about" id="about"> -->
+    <!-- Container for the image related to the about section, enhancing visual appeal. -->
+    <!-- <div class="about-img"> -->
+        <!-- Image showing the person or a relevant graphic. -->
+       <!--  <img src="images/about.png" alt="">
+    </div> -->
+
+    <!-- Container for the textual content about the person or organization. -->
+    <!-- <div class="about-content"> -->
+        <!-- Section heading with emphasis on "Me" to make it personal. -->
+        <!-- <h2 class="heading">About <span>Me</span></h2> -->
+        <!-- Professional title or role to give a quick overview of expertise. -->
+       <!--  <h3>Frontend Developer!</h3> -->
+        <!-- Detailed description or biography providing deeper insight into the person's background, skills, and accomplishments. -->
+        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. ...</p> -->
+        <!-- A call to action, inviting the visitor to read more, possibly leading to a detailed resume or biography. -->
+       <!--  <a href="#" class="btn">Read More</a>
+    </div>
+</section>  -->
+
+<!-- Contact Section: Enables visitors to reach out through a form, encouraging communication. -->
+<section class="contact" id="contact">
+    <!-- Section heading to clearly indicate the purpose of this part of the page. -->
+    <h2 class="heading">Contact <span>Me!</span></h2>
+
+    <!-- The contact form allowing visitors to input their details and message. -->
+    <form action="mailto:jamesjay323@gmail.com,jaylenejames186@gmail.com" method="post" enctype="text/plain">
+        <!-- Grouping of inputs for name and email for better organization. -->
+        <div class="input-box">
+            <input type="text" name="Full Name" placeholder="Full Name">
+            <input type="email" name="Email Address" placeholder="Email Address">
+        </div>
+        <!-- Grouping of inputs for mobile number and email subject for structured input fields. -->
+        <div class="input-box">
+            <input type="number" name="Mobile Number" placeholder="Mobile Number">
+            <input type="text" name="Email Subject" placeholder="Email Subject">
+        </div>
+        <!-- Text area for the visitor to type a message, with specified dimensions to accommodate longer text. -->
+        <textarea name="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <!-- Submit button to send the message, styled consistently with the website's design. -->
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+</section>
+
+
+
+    <!-- Footer Design: The footer section typically contains copyright information, links to legal documents or policies, and a back-to-top button. -->
+<footer class="footer">
+    <!-- Container for copyright text, providing legal protection and information about the rights holder. -->
+    <div class="footer-text">
+        <p>Copyright &copy; 2023 by Codehal | All Rights Reserved.</p>
+    </div>
+
+    <!-- Container for the back-to-top icon, which provides a quick way for users to return to the top of the page. -->
+    <div class="footer-iconTop">
+        <!-- Link that directs users back to the top of the page. The icon is visually representative of this action. -->
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+</footer>
+
+<!-- Scripts Section: Below are scripts that add functionality or effects to the website. -->
+
+<!-- Scroll Reveal Script: Used for animating elements as they come into view while scrolling. -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- Typed.js Script: A JavaScript library for creating a typing animation effect, often used for dynamic text content. -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- Custom JavaScript File: Contains specific JavaScript code tailored for this website, such as interactions, animations, or dynamic content adjustments. -->
+<script src="js/script.js"></script>
+</body>
+</html>
